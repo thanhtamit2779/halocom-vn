@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Arrow right color</title>
+    <desc>Created with Sketch.</desc>
+    <g stroke="none" stroke-width="1" fill="#0A2C4D" fill-rule="evenodd" opacity="0.8">
+        <g  transform="translate(-431.000000, -193.000000)" fill="#0A2C4D" fill-rule="nonzero">
+            <g id="Time" transform="translate(230.000000, 130.000000)">
+                <g id="Date">
+                    <path d="M201.627325,63.5924225 C201.746294,63.473429 201.939228,63.473429 202.058221,63.5924225 L207.375362,68.9095638 C207.494356,69.028582 207.494356,69.2214908 207.375362,69.3404843 L202.058221,74.6576255 C201.939228,74.7765942 201.746294,74.7765942 201.627325,74.6576255 L201.124622,74.1548973 C201.005629,74.0359038 201.005629,73.8429951 201.124622,73.7240016 L205.712677,69.1250116 L201.124622,64.5260217 C201.005629,64.4070034 201.005629,64.2140946 201.124622,64.0951259 L201.627325,63.5924225 Z" id="Arrow_01"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

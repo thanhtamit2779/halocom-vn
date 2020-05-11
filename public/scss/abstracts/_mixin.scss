@@ -1,0 +1,62 @@
+@mixin text-align($align) {
+    text-align: $align;
+}
+
+@mixin border-radius($value, $property: 'border-radius') {
+    #{$property}: $value;
+    -moz-#{$property}: $value;
+    -webkit-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+}
+
+@mixin box-shadow($value) {
+    box-shadow: $value;
+    -moz-box-shadow: $value;
+    -webkit-box-shadow: $value;
+    -o-box-shadow: $value;
+}
+
+@mixin calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+}
+
+@mixin transform($property) {
+    transform: $property;
+    -ms-transform: $property; /* IE 9 */
+    -webkit-transform: $property; /* Safari 3-8 */
+}
+
+@mixin transition($property) {
+    transition: $property;
+    -ms-transition: $property; /* IE 9 */
+    -webkit-transition: $property; /* Safari 3-8 */
+}
+
+@mixin order($position:1) {
+    order: $position;
+    -webkit-order: $position;
+    -ms-order: $position;
+    -moz-order: $position;
+}
+
+@mixin truncate($line: 1) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: $line;
+    -moz-line-clamp: $line;
+    -webkit-line-clamp: $line;
+    -o-line-clamp: $line;
+    -ms-line-clamp: $line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin user-select($property: none) {
+    -webkit-user-select: $property;
+    -moz-user-select: $property;
+    -ms-user-select: $property;
+    user-select: $property;
+}
