@@ -1,0 +1,12 @@
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+Cài đặt package:
+
+### `yarn install` hoặc `npm install`
+
+Chạy chương trình
+### `yarn start` hoặc `npm start`
+
+Deloy
+### `yarn build` hoặc `npm run build`

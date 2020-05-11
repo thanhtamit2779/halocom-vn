@@ -1,0 +1,237 @@
+.header {
+    @include box-shadow(0 2px 5px 0 rgba($color-default, 0.05));
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    .header-wrapper {
+        @extend .d-flex;
+        width: 100%;
+        height: 100%;   
+        align-items: center;
+        min-height: 50px;
+        background: rgba($color-white, 1);
+        border-bottom: 1px solid #edeff0;
+        padding: 0 70px;
+        position: relative;
+    }
+
+
+    .header-content {
+        @extend .d-flex;
+        align-items: center;
+        align-content: center;
+    }
+    .section-menu {
+        @extend .d-flex;
+        align-items: center;
+        align-content: center;
+
+        a {
+            color: rgba($color-default, 1);
+            padding: 5px 30px;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &:hover {
+                color: rgba($color-green, 1);
+            }
+        }
+    }
+
+    &--main {
+        @extend .d-flex;
+    }
+
+    &--info {
+        @extend .d-flex;
+        margin-left: auto;
+    }
+
+    &__logo {
+        line-height: normal;
+        margin: 0;
+        padding: 0;
+        margin-right: 30px;
+
+        h1 {
+            margin-bottom: 0;
+            color: rgba($color-green, 1);
+            text-transform: uppercase;
+
+            span.big {
+                font-weight: 900;
+            }
+
+            span.small {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__account {
+        @extend .d-flex;
+        align-items: center;
+        margin-left: auto;
+        min-height: 32px;
+
+    }
+
+    &__btn-register, 
+    &__btn-login {
+        @include border-radius(4px);
+        color: rgba($color-white, 1);
+        height: 100%;
+        display: inline-block;
+        padding: 6px 15px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+
+        &:hover {
+            color: rgba($color-white, 1);
+        }
+    }
+
+    &__btn-login {
+        background: rgba($color-green, 1);
+        margin-left: 15px;
+
+        &:hover {
+            @include box-shadow(0px 17px 10px -10px rgba($color-green, 0.4));
+            background: rgba($color-green, 1);
+        }
+    }
+
+    &__btn-register {
+        background: rgba($color-red, 1);
+
+        &:hover {
+            @include box-shadow(0px 17px 10px -10px rgba($color-red, 0.4));
+            background: rgba($color-red, 1);
+        }
+    }
+
+    &__toogle {
+        outline: none;
+        display: none;
+        border: none;
+        background: transparent;
+    }
+}
+
+.section-btn-login {
+
+}
+
+.main {
+    padding: 30px 70px;
+    padding-top: 70px;
+}
+
+.footer {
+    background: rgba($color-default, 1);
+    color: rgba($color-white, 1);
+    width: 100%;
+    text-align: center;
+    padding: 5px 15px;
+
+    p {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        .header-wrapper {
+            padding: 0 15px;
+        }
+
+        .header-content {
+            display: none;
+            padding: 15px;
+            position: fixed;
+            top: 50px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            background: rgba($color-white, 1);
+        }
+
+        &.open {
+            .header-content {
+                display: block;
+            }
+        }
+
+        .section-search {
+            input {
+                @include calc(min-width, '100% - 32px');
+            }
+
+            button {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .section-menu {
+            display: block;
+            padding: 30px 0;
+            
+            a {
+                width: 100%;
+                display: block;
+                text-align: left;
+                font-size: 18px;
+                padding-left: 0;
+            }
+        }
+
+        &__logo {
+            @include calc(width, '100% - 135px');
+            text-align: center;
+
+        }
+
+        &__account {
+            .section-select-user__name {
+                display: none;
+            }
+
+            min-width: 100px;
+        }
+
+        &__toogle {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+        }
+
+        &__btn-register {
+            display: none;
+        }
+
+        &__btn-login {
+            margin: 0;
+        }
+    }
+
+    .main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

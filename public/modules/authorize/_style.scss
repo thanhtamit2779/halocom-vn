@@ -1,0 +1,94 @@
+.section-login {
+    @extend .d-flex;
+    height: 100vh;
+
+    &__sideshow {
+        @extend .d-flex;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        padding: 0 90px;
+        background: rgba($color-default, 1);
+        text-align: justify;
+
+        img {
+            margin-bottom: 3.2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.167;
+            font-weight: 700;
+            color: rgba($color-green, 1);
+        }
+       
+        h2,
+        h3,
+        p {
+            color: rgba($color-white, 1);
+        }
+    }
+
+    &__form {
+        @extend .d-flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        padding: 0 50px;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.6;
+            margin-bottom: 2.7rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.section-form {
+    &__item {
+        @extend .d-flex;
+        position: relative;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &__icon {
+            @extend .d-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            z-index: 1;
+        }
+
+        &__input {
+            padding-left: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-login {
+        &__sideshow {
+            display: none;
+        }
+
+        &__form {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .section-login {
+        &__sideshow,
+        &__form {
+            width: 50%;
+        }
+    }
+}
