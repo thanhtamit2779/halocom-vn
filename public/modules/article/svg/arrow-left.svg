@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>arrow left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Lịch-Hẹn" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+        <g id="Lịch-hẹn__OP01_02" transform="translate(-250.000000, -193.000000)" fill="#0A2C4D" fill-rule="nonzero">
+            <g id="Time" transform="translate(230.000000, 130.000000)">
+                <g id="Date">
+                    <path d="M25.872659,74.6576007 C25.7536904,74.7765942 25.5607568,74.7765942 25.4417633,74.6576255 L20.124622,69.3404843 C20.0056286,69.221466 20.0056286,69.0285572 20.124622,68.9095638 L25.4417633,63.5923977 C25.5607568,63.473429 25.7536904,63.473429 25.872659,63.5923977 L26.3753625,64.0951259 C26.4943559,64.2141194 26.4943559,64.4070282 26.3753625,64.5260217 L21.7873073,69.1250116 L26.3753625,73.7239768 C26.4943559,73.8429951 26.4943559,74.0359038 26.3753625,74.1548725 L25.872659,74.6576007 Z" id="Arrow_02"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+body,
+html,
+input, 
+select {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    color: $color-default;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+.btn-reset {
+    @include border-radius(0);
+    @include box-shadow(none);
+    border:none;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
