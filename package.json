@@ -73,7 +73,7 @@
     "build": "webpack -p --progress",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "webpack -p --progress",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
