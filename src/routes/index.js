@@ -6,9 +6,9 @@ import { AuthorizeLoginContainer } from 'modules/authorize/login';
 
 const Routes = () => <React.Fragment>
     <Route path="/" exact component={ArticleListContainer} />
-    <Route path="/article" exact component={ArticleListContainer} />
-    <Route path='/article/:ArticleId' exact component={ArticleDetailContainer} />
-    <Route path="/login" exact component={AuthorizeLoginContainer} />
+    <Route path="/halocom-vn/article" exact component={ArticleListContainer} />
+    <Route path='/halocom-vn/article/:ArticleId' exact component={ArticleDetailContainer} />
+    <Route path="/halocom-vn/login" exact component={AuthorizeLoginContainer} />
 </React.Fragment>
 
 export default Routes;
