@@ -12,10 +12,8 @@ module.exports = {
     "filename": '[name].bundle.js'
   },
   watch: true,
-  //devtool: "source-map",
   devServer: {
     contentBase: BUILD_DIR,
-    //   port: 9001,
     compress: true,
     hot: true,
     open: true
@@ -130,8 +128,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[contenthash].css',
+      filename: '[name].css',
+      chunkFilename: '[name].css',
     }),
     new webpack.ProvidePlugin({
       lodash: ['lodash'],
@@ -139,7 +137,7 @@ module.exports = {
       connect: ['react-redux', 'connect'],
     }),
     new HtmlWebPackPlugin({
-      template: "./src/assets/index.html"
+      template: "./public/index.html"
     })
   ]
 }

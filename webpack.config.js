@@ -9,8 +9,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: '[name].[hash].js',
-    chunkFilename: '[name].[contenthash].js',
+    filename: '[name].js',
+    chunkFilename: '[name].js',
   },
   devtool: "inline-source-map",
   devServer: {
@@ -126,8 +126,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[contenthash].css',
+      filename: '[name].css',
+      chunkFilename: '[name].css',
     }),
     new webpack.ProvidePlugin({
       lodash: ['lodash'],
